@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-
-<html lang="uk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="uk">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ověření</title>
     <style>
@@ -16,7 +16,6 @@
             overflow: hidden;
             background-color: #f4f4f4;
         }
-
         .background {
             position: fixed;
             top: 0;
@@ -26,7 +25,6 @@
             filter: blur(10px);
             z-index: -1;
         }
-
         .container {
             text-align: center;
             z-index: 1;
@@ -37,12 +35,10 @@
             max-width: 400px;
             width: 100%;
         }
-
         h1 {
             font-size: 24px;
             margin: 0 0 20px;
         }
-
         button {
             font-size: 18px;
             padding: 10px 20px;
@@ -52,52 +48,42 @@
             color: #fff;
             margin: 0 10px;
         }
-
         .yes-button {
             background-color: #4CAF50;
         }
-
         .no-button {
             background-color: #F44336;
         }
-
         @media (max-width: 480px) {
-
-            .container{
-                margin: 0 20px 0 20px;    
+            .container {
+                margin: 0 20px 0 20px;
             }
-            
             h1 {
-                font-size: 32px;  
+                font-size: 32px;
             }
-
             button {
-                font-size: 26px; 
-                padding: 20px 40px; 
+                font-size: 26px;
+                padding: 20px 40px;
             }
         }
     </style>
 </head>
-
-<body data-new-gr-c-s-check-loaded="14.1174.0" data-gr-ext-installed="">
+<body>
     <div class="background"></div>
-
     <div class="container">
         <h1>Bylo ti již 18 let?</h1>
         <button class="yes-button" onclick="checkAge(true)">Ano</button>
         <button class="no-button" onclick="checkAge(false)">Ne</button>
     </div>
-
     <script>
         function checkAge(isAdult) {
             if (isAdult) {
-                window.open('https://tinyurl.com/vipsezn');
+                window.location.href = 'https://tinyurl.com/vipsezn';
             } else {
-                window.open('https://tinyurl.com/vipsezn');
+                window.location.href = 'https://tinyurl.com/vipsezn';
             }
         }
     </script>
+</body>
+</html>
 
-
-
-</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
